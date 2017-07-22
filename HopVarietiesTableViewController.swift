@@ -10,12 +10,18 @@ import UIKit
 
 class HopVarietiesTableViewController: UITableViewController {
     
-    
-    var hops = [Hop]()
+    var hops = [Hop?]()
+    let citra = Hop(name: "Citra", alphaAcids: "11 - 15", characteristics: "Darling of the WestCoast brew scene, citra hops are charachterized primarily by a bright, and as the name implies, citrusy aroma.", substitutes: ["galaxy"])
+    let galaxy = Hop(name: "Galaxy", alphaAcids: "11.6 - 16", characteristics: "The international sensation that put the Southern Hemisphere brew scene on the map, galaxy hops are clean and fruity.", substitutes: ["amarillo"])
+    let amarillo = Hop(name: "Amarillo", alphaAcids: "7 - 11", characteristics: "Grapefruit, zest and juice.", substitutes: ["citra"])
+
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hops.append(amarillo)
+        hops.append(citra)
+        hops.append(galaxy)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -32,17 +38,17 @@ class HopVarietiesTableViewController: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10//hops.count
+        return hops.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "hopVarietiesTableViewCell", for: indexPath) as! HopVarietiesTableViewCell
 
-//        let row = indexPath.row
-//        let hop = hops[row]
-        cell.hopNameLabel.text = "Hop Name" //hop.name
-        cell.alphaAcidLabel.text = "AA" //hop.alphaAcids
+        let row = indexPath.row
+        let hop = hops[row]
+        cell.hopNameLabel.text = hop!.name
+        cell.alphaAcidLabel.text = hop!.alphaAcids
 
         return cell
     }

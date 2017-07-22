@@ -10,6 +10,21 @@ import UIKit
 
 class HopViewController: UIViewController {
 
+    
+    @IBOutlet weak var hopNameTextField: UITextField!
+    @IBOutlet weak var alphaAcidsTextField: UITextField!
+    @IBOutlet weak var characteristicsTextView: UITextView!
+    @IBOutlet weak var substitutesTextView: UITextView!
+    
+    override func viewWillAppear(_ animated: Bool) { super.viewWillAppear(animated)
+       
+        hopNameTextField.text = ""
+        alphaAcidsTextField.text = ""
+        characteristicsTextView.text = ""
+        substitutesTextView.text = ""
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -10,10 +10,17 @@ import Foundation
 
 class Hop {
     
-    var name : String?
-    var alphaAcids : String?
-    var characteristics : String?
-    var substitutes : [Hop]?
+    var name : String
+    var alphaAcids : String
+    var characteristics : String
+    var substitutes : [String]
 
+    init (name: String, alphaAcids: String, characteristics: String, substitutes: [String]) {
+        self.name = name
+        self.alphaAcids = alphaAcids
+        self.characteristics = characteristics
+        self.substitutes = []
+    }
+    
 }
 
