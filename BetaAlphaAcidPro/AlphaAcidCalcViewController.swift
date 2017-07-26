@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class AlphaAcidCalcViewController: UIViewController {
+class AlphaAcidCalcViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @IBOutlet weak var originalAA: UITextField!
     @IBOutlet weak var originalQuantity: UITextField!
@@ -87,10 +87,20 @@ class AlphaAcidCalcViewController: UIViewController {
         originalQuantity.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         revisedAA.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+        tap.delegate = self
+        self.view.addGestureRecognizer(tap)
+
+        
         // Do any additional setup after loading the view, typically from a nib.
         
     }
     
+    func handleTap(_ gestureRocnizer : UIGestureRecognizer) {
+        originalAA.resignFirstResponder()
+        originalQuantity.resignFirstResponder()
+        revisedAA.resignFirstResponder()
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
