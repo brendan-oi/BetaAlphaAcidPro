@@ -19,7 +19,7 @@ class Hop {
         self.name = name
         self.alphaAcids = alphaAcids
         self.characteristics = characteristics
-        self.substitutes = []
+        self.substitutes = substitutes
     }
     
 }

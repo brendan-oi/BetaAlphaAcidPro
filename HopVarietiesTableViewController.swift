@@ -59,6 +59,26 @@ class HopVarietiesTableViewController: UITableViewController {
     }
         
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier {
+            if identifier == "hopViewController" {
+                print("Table view cell tapped")
+                
+                let indexPath = tableView.indexPathForSelectedRow!
+                
+                let hop = hops[indexPath.row]
+                
+                let HopViewController = segue.destination as! HopViewController
+                
+                HopViewController.hop = hop
+            }
+        }
+    }
+    
+    
+    
+    
+    
 
     /*
     // Override to support conditional editing of the table view.

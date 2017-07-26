@@ -25,7 +25,8 @@ class AlphaAcidCalcViewController: UIViewController {
     func calculateRevisedQuantity() -> String {
         if let ogAA = Double(originalAA.text!), let ogQt = Double(originalQuantity.text!), let newAA = Double(revisedAA.text!) {
             let newQt = Double((ogAA * ogQt) / newAA)
-            return String(newQt)
+            let roundedNewQt = round(newQt * 100) / 100
+            return String(roundedNewQt)
         } else { return " "
         }
     }

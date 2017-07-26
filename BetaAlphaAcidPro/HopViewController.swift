@@ -11,17 +11,26 @@ import UIKit
 class HopViewController: UIViewController {
 
     
-    @IBOutlet weak var hopNameTextField: UITextField!
-    @IBOutlet weak var alphaAcidsTextField: UITextField!
+    @IBOutlet weak var hopViewNameLabel: UILabel!
+    @IBOutlet weak var hopViewAlphaAcidLabel: UILabel!
     @IBOutlet weak var characteristicsTextView: UITextView!
     @IBOutlet weak var substitutesTextView: UITextView!
     
-    override func viewWillAppear(_ animated: Bool) { super.viewWillAppear(animated)
-       
-        hopNameTextField.text = ""
-        alphaAcidsTextField.text = ""
-        characteristicsTextView.text = ""
-        substitutesTextView.text = ""
+    
+    var hop: Hop?
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let hop = hop {
+            hopViewNameLabel.text = hop.name
+            hopViewAlphaAcidLabel.text = hop.alphaAcids
+            characteristicsTextView.text = hop.characteristics
+            let hopSubArray = hop.substitutes
+            let joiner = ", "
+            substitutesTextView.text = hopSubArray.joined(separator: joiner)
+            
+        }
     }
     
     

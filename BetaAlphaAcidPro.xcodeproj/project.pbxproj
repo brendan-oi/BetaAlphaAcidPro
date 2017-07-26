@@ -10,7 +10,7 @@
 		0B4B9E9F1F22B46E00CFF099 /* Hop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4B9E9E1F22B46E00CFF099 /* Hop.swift */; };
 		0BE6AEF21F22775400D9A40F /* HopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE6AEF11F22775400D9A40F /* HopViewController.swift */; };
 		0BEBEE901F211991007C4865 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEBEE8F1F211991007C4865 /* AppDelegate.swift */; };
-		0BEBEE921F211991007C4865 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEBEE911F211991007C4865 /* FirstViewController.swift */; };
+		0BEBEE921F211991007C4865 /* AlphaAcidCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEBEE911F211991007C4865 /* AlphaAcidCalcViewController.swift */; };
 		0BEBEE971F211991007C4865 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BEBEE951F211991007C4865 /* Main.storyboard */; };
 		0BEBEE991F211991007C4865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BEBEE981F211991007C4865 /* Assets.xcassets */; };
 		0BEBEE9C1F211991007C4865 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BEBEE9A1F211991007C4865 /* LaunchScreen.storyboard */; };
@@ -23,7 +23,7 @@
 		0BE6AEF11F22775400D9A40F /* HopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopViewController.swift; sourceTree = "<group>"; };
 		0BEBEE8C1F211991007C4865 /* BetaAlphaAcidPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetaAlphaAcidPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BEBEE8F1F211991007C4865 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0BEBEE911F211991007C4865 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		0BEBEE911F211991007C4865 /* AlphaAcidCalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaAcidCalcViewController.swift; sourceTree = "<group>"; };
 		0BEBEE961F211991007C4865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0BEBEE981F211991007C4865 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BEBEE9B1F211991007C4865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,12 +62,12 @@
 		0BEBEE8E1F211991007C4865 /* BetaAlphaAcidPro */ = {
 			isa = PBXGroup;
 			children = (
-				0B4B9E9E1F22B46E00CFF099 /* Hop.swift */,
 				0BEBEE8F1F211991007C4865 /* AppDelegate.swift */,
-				0BEBEE911F211991007C4865 /* FirstViewController.swift */,
+				0BEBEE911F211991007C4865 /* AlphaAcidCalcViewController.swift */,
 				0BEBEEA31F214F92007C4865 /* HopVarietiesTableViewController.swift */,
 				0BE6AEF11F22775400D9A40F /* HopViewController.swift */,
 				0BF84A8F1F2155C500978D42 /* HopVarietiesTableViewCell.swift */,
+				0B4B9E9E1F22B46E00CFF099 /* Hop.swift */,
 				0BEBEE951F211991007C4865 /* Main.storyboard */,
 				0BEBEE981F211991007C4865 /* Assets.xcassets */,
 				0BEBEE9A1F211991007C4865 /* LaunchScreen.storyboard */,
@@ -153,7 +153,7 @@
 				0BEBEE901F211991007C4865 /* AppDelegate.swift in Sources */,
 				0BF84A901F2155C500978D42 /* HopVarietiesTableViewCell.swift in Sources */,
 				0BE6AEF21F22775400D9A40F /* HopViewController.swift in Sources */,
-				0BEBEE921F211991007C4865 /* FirstViewController.swift in Sources */,
+				0BEBEE921F211991007C4865 /* AlphaAcidCalcViewController.swift in Sources */,
 				0B4B9E9F1F22B46E00CFF099 /* Hop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
