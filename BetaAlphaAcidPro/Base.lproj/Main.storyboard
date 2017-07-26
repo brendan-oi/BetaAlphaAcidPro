@@ -31,38 +31,89 @@
                                 <color key="textColor" red="0.26738891669999998" green="0.58205148959999997" blue="0.1253272745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="q9Y-qP-N85" userLabel="Super Stack View">
-                                <rect key="frame" x="66" y="110" width="243" height="195"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="q9Y-qP-N85" userLabel="Super Stack View">
+                                <rect key="frame" x="66" y="110" width="243" height="338.5"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Original AA" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ygA-cO-4K2">
-                                        <rect key="frame" x="0.0" y="0.0" width="243" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Original Quantity" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5gD-uG-dYp">
-                                        <rect key="frame" x="0.0" y="55" width="243" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Revised AA" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XCZ-wU-Q0M">
-                                        <rect key="frame" x="0.0" y="110" width="243" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                    </textField>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTG-69-0jL" userLabel="Revised Quantity">
-                                        <rect key="frame" x="0.0" y="165" width="243" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="fsG-t7-oJa">
+                                        <rect key="frame" x="0.0" y="0.0" width="243" height="55"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Revised Quantity:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaY-Ub-b76">
-                                                <rect key="frame" x="0.0" y="0.0" width="134.5" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Original AA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45a-tU-kHo" userLabel="Original AA Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="243" height="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Original AA" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ygA-cO-4K2">
+                                                <rect key="frame" x="0.0" y="25" width="243" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <connections>
+                                                    <action selector="originalAAEdited:" destination="9pv-A4-QxB" eventType="editingChanged" id="dHC-25-HdV"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="45a-tU-kHo" firstAttribute="width" secondItem="ygA-cO-4K2" secondAttribute="width" id="MdI-v9-nJl"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="ezu-pj-mVI">
+                                        <rect key="frame" x="0.0" y="100" width="243" height="49.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Original Quantity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGV-OT-B9K" userLabel="Original Quantity Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="243" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Original Quantity" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5gD-uG-dYp">
+                                                <rect key="frame" x="0.0" y="19.5" width="243" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <connections>
+                                                    <action selector="originalQuantityEdited:" destination="9pv-A4-QxB" eventType="editingChanged" id="oci-ph-b6t"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="zGV-OT-B9K" firstAttribute="width" secondItem="5gD-uG-dYp" secondAttribute="width" id="uyU-hq-6A8"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="vxK-9L-rpj">
+                                        <rect key="frame" x="0.0" y="194.5" width="243" height="49.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Revised AA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZv-g7-JPy" userLabel="Revised AA Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="243" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Revised AA" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XCZ-wU-Q0M">
+                                                <rect key="frame" x="0.0" y="19.5" width="243" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <connections>
+                                                    <action selector="revisedAAEdited:" destination="9pv-A4-QxB" eventType="editingChanged" id="o3B-7h-lh0"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="nZv-g7-JPy" firstAttribute="width" secondItem="XCZ-wU-Q0M" secondAttribute="width" id="7DF-H2-H2c"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AGm-sH-UPM">
+                                        <rect key="frame" x="0.0" y="289" width="243" height="49.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Revised Quantity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPR-wT-jYj" userLabel="Revised Quantity Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="243" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FCJ-8P-Rdm">
-                                                <rect key="frame" x="134.5" y="0.0" width="108.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="19.5" width="243" height="30"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" notEnabled="YES"/>
                                                 </accessibility>
@@ -71,13 +122,17 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="FPR-wT-jYj" firstAttribute="width" secondItem="FCJ-8P-Rdm" secondAttribute="width" id="8mr-fz-wDR"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="XCZ-wU-Q0M" firstAttribute="width" secondItem="q9Y-qP-N85" secondAttribute="width" id="HUd-8N-3h8"/>
-                                    <constraint firstItem="ygA-cO-4K2" firstAttribute="width" secondItem="q9Y-qP-N85" secondAttribute="width" id="VAX-9L-XhR"/>
-                                    <constraint firstItem="5gD-uG-dYp" firstAttribute="width" secondItem="q9Y-qP-N85" secondAttribute="width" id="q1w-g9-IhX"/>
-                                    <constraint firstItem="rTG-69-0jL" firstAttribute="width" secondItem="q9Y-qP-N85" secondAttribute="width" id="w4D-aY-VxD"/>
+                                    <constraint firstItem="ygA-cO-4K2" firstAttribute="width" secondItem="q9Y-qP-N85" secondAttribute="width" id="O5O-oB-N4m"/>
+                                    <constraint firstItem="XCZ-wU-Q0M" firstAttribute="width" secondItem="q9Y-qP-N85" secondAttribute="width" id="UVT-XD-l2U"/>
+                                    <constraint firstItem="5gD-uG-dYp" firstAttribute="width" secondItem="q9Y-qP-N85" secondAttribute="width" id="fCZ-t1-o3v"/>
+                                    <constraint firstItem="ygA-cO-4K2" firstAttribute="top" secondItem="q9Y-qP-N85" secondAttribute="top" constant="25" id="mdg-R5-9Zy"/>
+                                    <constraint firstItem="FCJ-8P-Rdm" firstAttribute="width" secondItem="q9Y-qP-N85" secondAttribute="width" id="sLv-t2-yS5"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -94,8 +149,11 @@
                     <tabBarItem key="tabBarItem" title="AA Calc" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="originalAA" destination="ygA-cO-4K2" id="bps-Tk-JJP"/>
+                        <outlet property="originalAALabel" destination="45a-tU-kHo" id="ih1-PI-aHQ"/>
                         <outlet property="originalQuantity" destination="5gD-uG-dYp" id="1Jx-HO-3wU"/>
+                        <outlet property="originalQuantityLabel" destination="zGV-OT-B9K" id="7Bu-Rj-21m"/>
                         <outlet property="revisedAA" destination="XCZ-wU-Q0M" id="FTC-F2-D6v"/>
+                        <outlet property="revisedAALabel" destination="nZv-g7-JPy" id="WBK-wb-UiN"/>
                         <outlet property="revisedQuantity" destination="FCJ-8P-Rdm" id="Kkx-LF-vVx"/>
                     </connections>
                 </viewController>
