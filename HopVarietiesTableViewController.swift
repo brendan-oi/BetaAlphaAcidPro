@@ -10,18 +10,30 @@ import UIKit
 
 class HopVarietiesTableViewController: UITableViewController {
     
-    var hops = [Hop?]()
+    var hops = [Hop]()
     let citra = Hop(name: "Citra", alphaAcids: "11 - 15", characteristics: "Darling of the WestCoast brew scene, citra hops are charachterized primarily by a bright, and as the name implies, citrusy aroma.", substitutes: ["galaxy"])
     let galaxy = Hop(name: "Galaxy", alphaAcids: "11.6 - 16", characteristics: "The international sensation that put the Southern Hemisphere brew scene on the map, galaxy hops are clean and fruity.", substitutes: ["amarillo"])
     let amarillo = Hop(name: "Amarillo", alphaAcids: "7 - 11", characteristics: "Grapefruit, zest and juice.", substitutes: ["citra"])
-
-    
+    let nelsonSauvin = Hop(name: "Nelson Sauvin", alphaAcids: "11 - 13", characteristics: "Named for the sauvignon blanc grape, whose aroma it resembles, Nelson Sauvin is fruity and tropical, with a delcate wine like bouquet.", substitutes: ["citra"])
+    let admiral = Hop(name: "Admiral", alphaAcids: "13 - 16", characteristics: "Sticky, resinous and bitter, this hight alpha acid hop has the heft and pedigee to carry the biggest double IPA", substitutes: ["Challenger","Target"])
+    let brewersGold = Hop(name: "Brewers Gold", alphaAcids: "8 - 11", characteristics: "A jammy, pepery hop, Brewers Gold is the antecedent of many of todays high Alpha Acid North American varieties" , substitutes: ["Chinook","Galena","Nugget"])
+    let cascade = Hop(name: "Cascade", alphaAcids: "5.5 - 9", characteristics: "Cascade is floral and citrusy with notes of lemon zest and honeysuckle.", substitutes: ["Amarillo", "Centenial"])
+    let centenial = Hop(name: "Centenial", alphaAcids: "7 - 12", characteristics: "Floral and citrusy", substitutes: ["Cascade","Chinook","Columbus"])
+    let challenger = Hop(name: "Chalenger", alphaAcids: "6.5 - 8.5", characteristics: "Citrus and earty spice.", substitutes: ["Admiral", "Perle", "Northern Brewer"])
     
     override func viewDidLoad() {
         super.viewDidLoad()
         hops.append(amarillo)
         hops.append(citra)
         hops.append(galaxy)
+        hops.append(nelsonSauvin)
+        hops.append(admiral)
+        hops.append(brewersGold)
+        hops.append(cascade)
+        hops.append(centenial)
+        hops.append(challenger)
+        hops.sort { $0.name < $1.name }
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -47,8 +59,8 @@ class HopVarietiesTableViewController: UITableViewController {
 
         let row = indexPath.row
         let hop = hops[row]
-        cell.hopNameLabel.text = hop!.name
-        cell.alphaAcidLabel.text = hop!.alphaAcids
+        cell.hopNameLabel.text = hop.name
+        cell.alphaAcidLabel.text = hop.alphaAcids
 
         return cell
     }
