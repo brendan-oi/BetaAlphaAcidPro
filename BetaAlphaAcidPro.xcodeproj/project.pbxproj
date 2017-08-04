@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B4B9E9F1F22B46E00CFF099 /* Hop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4B9E9E1F22B46E00CFF099 /* Hop.swift */; };
+		0B5A747A1F33DDFB00226D54 /* hopbackground.sketch in Resources */ = {isa = PBXBuildFile; fileRef = 0B5A74791F33DDFB00226D54 /* hopbackground.sketch */; };
 		0BE6AEF21F22775400D9A40F /* HopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE6AEF11F22775400D9A40F /* HopViewController.swift */; };
 		0BEBEE901F211991007C4865 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEBEE8F1F211991007C4865 /* AppDelegate.swift */; };
 		0BEBEE921F211991007C4865 /* AlphaAcidCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEBEE911F211991007C4865 /* AlphaAcidCalcViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		0B4B9E9E1F22B46E00CFF099 /* Hop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hop.swift; sourceTree = "<group>"; };
+		0B5A74791F33DDFB00226D54 /* hopbackground.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; name = hopbackground.sketch; path = BetaAlphaAcidPro/Assets.xcassets/hopbackground.sketch; sourceTree = "<group>"; };
 		0BE6AEF11F22775400D9A40F /* HopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopViewController.swift; sourceTree = "<group>"; };
 		0BEBEE8C1F211991007C4865 /* BetaAlphaAcidPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetaAlphaAcidPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BEBEE8F1F211991007C4865 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 		0BEBEE831F211991007C4865 = {
 			isa = PBXGroup;
 			children = (
+				0B5A74791F33DDFB00226D54 /* hopbackground.sketch */,
 				0BEBEE8E1F211991007C4865 /* BetaAlphaAcidPro */,
 				0BEBEE8D1F211991007C4865 /* Products */,
 			);
@@ -139,6 +142,7 @@
 				0BEBEE9C1F211991007C4865 /* LaunchScreen.storyboard in Resources */,
 				0BEBEE991F211991007C4865 /* Assets.xcassets in Resources */,
 				0BEBEE971F211991007C4865 /* Main.storyboard in Resources */,
+				0B5A747A1F33DDFB00226D54 /* hopbackground.sketch in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
