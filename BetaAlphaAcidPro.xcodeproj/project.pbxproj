@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B2B57AA1F352135000B51C1 /* Bitmap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2B57A91F352134000B51C1 /* Bitmap.png */; };
 		0B4B9E9F1F22B46E00CFF099 /* Hop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4B9E9E1F22B46E00CFF099 /* Hop.swift */; };
 		0B5A747A1F33DDFB00226D54 /* hopbackground.sketch in Resources */ = {isa = PBXBuildFile; fileRef = 0B5A74791F33DDFB00226D54 /* hopbackground.sketch */; };
 		0BE6AEF21F22775400D9A40F /* HopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE6AEF11F22775400D9A40F /* HopViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B2B57A91F352134000B51C1 /* Bitmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Bitmap.png; path = BetaAlphaAcidPro/Bitmap.png; sourceTree = "<group>"; };
 		0B4B9E9E1F22B46E00CFF099 /* Hop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hop.swift; sourceTree = "<group>"; };
 		0B5A74791F33DDFB00226D54 /* hopbackground.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; name = hopbackground.sketch; path = BetaAlphaAcidPro/Assets.xcassets/hopbackground.sketch; sourceTree = "<group>"; };
 		0BE6AEF11F22775400D9A40F /* HopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 		0BEBEE831F211991007C4865 = {
 			isa = PBXGroup;
 			children = (
+				0B2B57A91F352134000B51C1 /* Bitmap.png */,
 				0B5A74791F33DDFB00226D54 /* hopbackground.sketch */,
 				0BEBEE8E1F211991007C4865 /* BetaAlphaAcidPro */,
 				0BEBEE8D1F211991007C4865 /* Products */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BEBEE9C1F211991007C4865 /* LaunchScreen.storyboard in Resources */,
+				0B2B57AA1F352135000B51C1 /* Bitmap.png in Resources */,
 				0BEBEE991F211991007C4865 /* Assets.xcassets in Resources */,
 				0BEBEE971F211991007C4865 /* Main.storyboard in Resources */,
 				0B5A747A1F33DDFB00226D54 /* hopbackground.sketch in Resources */,
