@@ -8,31 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		0B2B57AA1F352135000B51C1 /* Bitmap.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2B57A91F352134000B51C1 /* Bitmap.png */; };
+		0B2B57B21F3D0E42000B51C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B2B57B11F3D0E42000B51C1 /* Assets.xcassets */; };
+		0B2B57B41F3D0E59000B51C1 /* calc.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2B57B31F3D0E59000B51C1 /* calc.png */; };
+		0B2B57B61F3D0E64000B51C1 /* hopsicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2B57B51F3D0E64000B51C1 /* hopsicon.png */; };
+		0B2B57B81F3D18BC000B51C1 /* HopVarietiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B57B71F3D18BC000B51C1 /* HopVarietiesTableViewController.swift */; };
+		0B2B57BA1F3E54C3000B51C1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B2B57B91F3E54C3000B51C1 /* Launch Screen.storyboard */; };
+		0B2B57BC1F3E58EE000B51C1 /* launch Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2B57BB1F3E58EE000B51C1 /* launch Screen.png */; };
 		0B4B9E9F1F22B46E00CFF099 /* Hop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4B9E9E1F22B46E00CFF099 /* Hop.swift */; };
-		0B5A747A1F33DDFB00226D54 /* hopbackground.sketch in Resources */ = {isa = PBXBuildFile; fileRef = 0B5A74791F33DDFB00226D54 /* hopbackground.sketch */; };
 		0BE6AEF21F22775400D9A40F /* HopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE6AEF11F22775400D9A40F /* HopViewController.swift */; };
 		0BEBEE901F211991007C4865 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEBEE8F1F211991007C4865 /* AppDelegate.swift */; };
 		0BEBEE921F211991007C4865 /* AlphaAcidCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEBEE911F211991007C4865 /* AlphaAcidCalcViewController.swift */; };
 		0BEBEE971F211991007C4865 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BEBEE951F211991007C4865 /* Main.storyboard */; };
 		0BEBEE991F211991007C4865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BEBEE981F211991007C4865 /* Assets.xcassets */; };
-		0BEBEE9C1F211991007C4865 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BEBEE9A1F211991007C4865 /* LaunchScreen.storyboard */; };
-		0BEBEEA41F214F93007C4865 /* HopVarietiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEBEEA31F214F92007C4865 /* HopVarietiesTableViewController.swift */; };
 		0BF84A901F2155C500978D42 /* HopVarietiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF84A8F1F2155C500978D42 /* HopVarietiesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B2B57A91F352134000B51C1 /* Bitmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Bitmap.png; path = BetaAlphaAcidPro/Bitmap.png; sourceTree = "<group>"; };
+		0B2B57A91F352134000B51C1 /* Bitmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bitmap.png; sourceTree = "<group>"; };
+		0B2B57B11F3D0E42000B51C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = BetaAlphaAcidPro/Assets.xcassets; sourceTree = "<group>"; };
+		0B2B57B31F3D0E59000B51C1 /* calc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calc.png; path = Assets.xcassets/calc.imageset/calc.png; sourceTree = "<group>"; };
+		0B2B57B51F3D0E64000B51C1 /* hopsicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hopsicon.png; path = Assets.xcassets/hopsicon.imageset/hopsicon.png; sourceTree = "<group>"; };
+		0B2B57B71F3D18BC000B51C1 /* HopVarietiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopVarietiesTableViewController.swift; sourceTree = "<group>"; };
+		0B2B57B91F3E54C3000B51C1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		0B2B57BB1F3E58EE000B51C1 /* launch Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "launch Screen.png"; path = "Assets.xcassets/launch Screen.png"; sourceTree = "<group>"; };
 		0B4B9E9E1F22B46E00CFF099 /* Hop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hop.swift; sourceTree = "<group>"; };
-		0B5A74791F33DDFB00226D54 /* hopbackground.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; name = hopbackground.sketch; path = BetaAlphaAcidPro/Assets.xcassets/hopbackground.sketch; sourceTree = "<group>"; };
 		0BE6AEF11F22775400D9A40F /* HopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopViewController.swift; sourceTree = "<group>"; };
 		0BEBEE8C1F211991007C4865 /* BetaAlphaAcidPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetaAlphaAcidPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BEBEE8F1F211991007C4865 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BEBEE911F211991007C4865 /* AlphaAcidCalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaAcidCalcViewController.swift; sourceTree = "<group>"; };
 		0BEBEE961F211991007C4865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0BEBEE981F211991007C4865 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0BEBEE9B1F211991007C4865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BEBEE9D1F211991007C4865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0BEBEEA31F214F92007C4865 /* HopVarietiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HopVarietiesTableViewController.swift; path = ../HopVarietiesTableViewController.swift; sourceTree = "<group>"; };
 		0BF84A8F1F2155C500978D42 /* HopVarietiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopVarietiesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,8 +56,7 @@
 		0BEBEE831F211991007C4865 = {
 			isa = PBXGroup;
 			children = (
-				0B2B57A91F352134000B51C1 /* Bitmap.png */,
-				0B5A74791F33DDFB00226D54 /* hopbackground.sketch */,
+				0B2B57B11F3D0E42000B51C1 /* Assets.xcassets */,
 				0BEBEE8E1F211991007C4865 /* BetaAlphaAcidPro */,
 				0BEBEE8D1F211991007C4865 /* Products */,
 			);
@@ -70,13 +75,17 @@
 			children = (
 				0BEBEE8F1F211991007C4865 /* AppDelegate.swift */,
 				0BEBEE911F211991007C4865 /* AlphaAcidCalcViewController.swift */,
-				0BEBEEA31F214F92007C4865 /* HopVarietiesTableViewController.swift */,
 				0BE6AEF11F22775400D9A40F /* HopViewController.swift */,
+				0B2B57B71F3D18BC000B51C1 /* HopVarietiesTableViewController.swift */,
 				0BF84A8F1F2155C500978D42 /* HopVarietiesTableViewCell.swift */,
 				0B4B9E9E1F22B46E00CFF099 /* Hop.swift */,
 				0BEBEE951F211991007C4865 /* Main.storyboard */,
+				0B2B57B91F3E54C3000B51C1 /* Launch Screen.storyboard */,
+				0B2B57BB1F3E58EE000B51C1 /* launch Screen.png */,
+				0B2B57A91F352134000B51C1 /* Bitmap.png */,
 				0BEBEE981F211991007C4865 /* Assets.xcassets */,
-				0BEBEE9A1F211991007C4865 /* LaunchScreen.storyboard */,
+				0B2B57B51F3D0E64000B51C1 /* hopsicon.png */,
+				0B2B57B31F3D0E59000B51C1 /* calc.png */,
 				0BEBEE9D1F211991007C4865 /* Info.plist */,
 			);
 			path = BetaAlphaAcidPro;
@@ -142,11 +151,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BEBEE9C1F211991007C4865 /* LaunchScreen.storyboard in Resources */,
 				0B2B57AA1F352135000B51C1 /* Bitmap.png in Resources */,
+				0B2B57BA1F3E54C3000B51C1 /* Launch Screen.storyboard in Resources */,
+				0B2B57B61F3D0E64000B51C1 /* hopsicon.png in Resources */,
+				0B2B57B41F3D0E59000B51C1 /* calc.png in Resources */,
+				0B2B57B21F3D0E42000B51C1 /* Assets.xcassets in Resources */,
+				0B2B57BC1F3E58EE000B51C1 /* launch Screen.png in Resources */,
 				0BEBEE991F211991007C4865 /* Assets.xcassets in Resources */,
 				0BEBEE971F211991007C4865 /* Main.storyboard in Resources */,
-				0B5A747A1F33DDFB00226D54 /* hopbackground.sketch in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BEBEEA41F214F93007C4865 /* HopVarietiesTableViewController.swift in Sources */,
+				0B2B57B81F3D18BC000B51C1 /* HopVarietiesTableViewController.swift in Sources */,
 				0BEBEE901F211991007C4865 /* AppDelegate.swift in Sources */,
 				0BF84A901F2155C500978D42 /* HopVarietiesTableViewCell.swift in Sources */,
 				0BE6AEF21F22775400D9A40F /* HopViewController.swift in Sources */,
@@ -175,14 +187,6 @@
 				0BEBEE961F211991007C4865 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0BEBEE9A1F211991007C4865 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0BEBEE9B1F211991007C4865 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

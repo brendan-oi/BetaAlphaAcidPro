@@ -31,6 +31,12 @@ class HopViewController: UIViewController {
             substitutesTextView.text = hopSubArray.joined(separator: joiner)
             
         }
+        characteristicsTextView.layer.cornerRadius = 5
+        characteristicsTextView.clipsToBounds = true
+        
+        
+        substitutesTextView.layer.cornerRadius = 5
+        substitutesTextView.clipsToBounds = true
     }
     
     
